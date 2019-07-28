@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Your Role</title>
+    <link rel="stylesheet" href="youcan.css">
+    <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("nav").style.top = "0";
+            } else {
+                document.getElementById("nav").style.top = "-50px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="nav">
+        <a href="youcan.html">Your Role</a>
+        <a href="nzgov.html">The Politics</a>
+        <a href="Face2Face.html">Face 2 Face</a>
+        <a href="index.html">Home</a>
+    </div>
+<div class="parallax"></div>
+<br>

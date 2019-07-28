@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#nav {
+    background-color: #006157;
+    position: fixed;
+    /* stick/fixed */
+    top: 0;
+    /* keep top */
+      transition: top 0.3s;
+    /* transition effect */
+    width: 100%;
+}
+
+#nav a {
+    color: white;
+    display: block;
+    float: right;
+    font-family: 'Allerta';
+    padding: 12px 29px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+* {
+    /*page background colour general */
+    background-color: #006157;
+    color: #ffffff
+}
+
+.main {
+    font-family: 'Allerta';
+    font-size: 22px;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-image: url("London-Glacier.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.sketchfab-embed-wrapper {
+    float: left;
+    width: 50%;
+}
+
+.nexclim3d {
+    float: right;
+    font-family: 'Allerta';
+    font-size: 22px;
+    width: 50%
+}
+.title {
+    font-family: 'Allerta';
+    font-size: 22px;
+    text-align: center;
+}
