@@ -10,7 +10,7 @@
     /* stick/fixed */
     top: 0;
     /* keep top */
-      transition: top 0.3s;
+    transition: top 0.3s;
     /* transition effect */
     width: 100%;
 }
@@ -48,10 +48,38 @@
 
 .parallax {
     background-attachment: fixed;
-    background-image: url("climateprotest.jpeg");
+    background-image: url("demonstration-4193109_1920.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    height: 700px;
     margin-top: 25px;
+}
+
+.footer {
+    bottom: 0;
+    color: white;
+    font-family: 'Allerta';
+    left: 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+.pin {
+    font-family: 'Allerta';
+}
+
+.title {
+    font-family: 'Allerta';
+    font-size: 22px;
+    text-align: center;
+}
+
+.content {
+    font-family: 'Allerta';
+    font-size: 22px;
+    padding-bottom: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
