@@ -16,6 +16,34 @@
             }
             prevScrollpos = currentScrollPos;
         }
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jan 1, 2030 00:00:01").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
+                minutes + "m " + seconds + "s ";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
     </script>
 </head>
 
@@ -23,8 +51,25 @@
     <div id="nav">
         <a href="youcan.html">Your Role</a>
         <a href="nzgov.html">The Politics</a>
-        <a href="Face2Face.html">Face 2 Face</a>
+        <a href="face2face.html">Face 2 Face</a>
         <a href="index.html">Home</a>
     </div>
     <div class="parallax"></div>
-<br>
+    <div class="pim">Image by <a href="https://pixabay.com/users/Kevin_Snyman-47288/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4193110">Kevin Snyman</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4193110">Pixabay</a></div>
+    <br>
+    <div class="title">
+        <h1>The Politics</h1>
+    </div>
+    <div class="text">
+        As of yet, the New Zealand governement has not declared a climate emergency like they have in the UK, Canada, France and Ireland have. Auckland, Christchurch, Wellington, Hutt City, Hawkes Bay, Kapiti and Porirua city councils have declared a climate emrgency within NZ. This still hasn't satisifed activists with them stating it's all well to declare an emergency but its useless unless they actually act on it.<br><br>
+        <center>
+            <h2>What actullly hapens when a 'Climate Emergency' is declared?</h2>
+        </center>When a climate emergency is declared, it is simmilar to when a disaster happens and a civil defence emergency is declared. Government or council funds and resources are made available to combat the emergency. Some thigns that can be mobilised are Volunteers, Emergency Personel, Supply groups and workforces. The aim of Climate Emergencys being declared are to encourage efforts to reduce greenhouse gasses as quickly as posible in order to try turn around our track on the path of no return which will be in <a id="demo"></a>. The change in climate, food paterns and water resources in the past few years is extremely noticeable and just proves that the effects of climate change are very real.<br><br> Even though governments have to deal with these issues, they are still unable to recognise that there is a climate emergency.
+
+    </div>
+
+    <div class="footer">
+        <p>Reuben Cohen 2019</p>
+    </div>
+
+</body></html>
