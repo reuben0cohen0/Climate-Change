@@ -16,6 +16,7 @@
 }
 
 #nav a {
+    
     color: white;
     display: block;
     float: right;
@@ -38,11 +39,15 @@
 .main {
     font-family: 'Allerta';
     font-size: 22px;
+    text-align: center;
+    background-color: #006157;
 }
 
 .desc {
     font-family: 'Allerta';
     font-size: 22px;
+    text-align: center;
+    background-color: #006157;
 }
 
 .parallax {
@@ -53,4 +58,14 @@
     background-size: cover;
     height: 500px;
     margin-top: 25px;
+}
+
+.footer {
+    bottom: 0;
+    color: white;
+    font-family: 'Allerta';
+    left: 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
 }
